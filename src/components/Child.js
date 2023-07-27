@@ -14,9 +14,10 @@ const Child = ({isLoggedIn})=>{
         event.preventDefault();
     }
     return (
-        <div>{
+        <div>
+            {
             !shouldhide &&
-            <form className="Form" onSubmit={handlesubmit}>
+            <form onSubmit={handlesubmit}>
                 <div>
                     <label>Username : </label>
                     <input type="text" onChange={(e)=>change(e)}></input>
